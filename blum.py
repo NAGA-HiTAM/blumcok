@@ -279,7 +279,7 @@ class BlumTod:
                 break
 
             end_date = datetime.fromtimestamp(end / 1000)
-            self.log(f"{hijau}green}Farming started")
+            self.log(f"{hijau}Farming started")
             self.log(f"{hijau}End of farming: {putih}{end_date}")
             return round(end / 1000)
         except (requests.exceptions.JSONDecodeError, json.decoder.JSONDecodeError):
@@ -520,7 +520,7 @@ class BlumTod:
             jam = str(jam).zfill(2)
             menit = str(menit).zfill(2)
             detik = str(detik).zfill(2)
-            print(f"{putih}Жду {jam}:{menit}:{detik} ", flush=True, end="\r")
+            print(f"{putih}Sabar cok {jam}:{menit}:{detik} ", flush=True, end="\r")
             t -= 1
             time.sleep(1)
         print("                          ", flush=True, end="\r")
